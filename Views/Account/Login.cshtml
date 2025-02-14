@@ -1,0 +1,24 @@
+﻿@model manita_dotnet_assignment.Data.LoginViewModel
+
+<h2>Login</h2>
+
+<form method="post">
+    @if (!string.IsNullOrEmpty(ViewData["ErrorMessage"]?.ToString()))
+    {
+        <div class="alert alert-danger">@ViewData["ErrorMessage"]</div>
+    }
+
+    <div class="form-group">
+        <label for="Email">Email</label>
+        <input type="email" class="form-control" id="Email" name="Email" value="@Model.Email" required />
+    </div>
+    <div class="form-group">
+        <label for="Password">Password</label>
+        <input type="password" class="form-control" id="Password" name="Password" required />
+    </div>
+    <div class="form-group">
+        <label for="RememberMe">Remember me</label>
+        <input type="checkbox" id="RememberMe" name="RememberMe" />
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>

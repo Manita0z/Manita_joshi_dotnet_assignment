@@ -1,0 +1,21 @@
+﻿<div>
+    <ul class="pagination">
+        @if (Model.Any())
+        {
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("OrdersView", new { pageIndex = 1 })">First</a>
+            </li>
+
+            @for (int i = 1; i <= (ViewData["TotalPages"] as int? ?? 1); i++)
+            {
+                <li class="page-item @(i == (ViewData["CurrentPage"] as int? ?? 1) ? "active" : "")">
+                    <a class="page-link" href="@Url.Action("OrdersView", new { pageIndex = i })">@i</a>
+                </li>
+            }
+
+            <li class="page-item">
+                <a class="page-link" href="@Url.Action("OrdersView", new { pageIndex = (ViewData["TotalPages"] as int? ?? 1) })">Last</a>
+            </li>
+        }
+    </ul>
+</div>

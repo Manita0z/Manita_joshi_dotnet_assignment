@@ -1,0 +1,47 @@
+@using manita_dotnet_assignment.Data
+@using manita_dotnet_assignment.Models
+@model PaginatedList<manita_dotnet_assignment.Models.Order>
+
+
+@{
+    ViewBag.Title = "Orders View";
+}
+
+<h2>Orders</h2>
+
+@if (ViewBag.Message != null)
+{
+    <p>@ViewBag.Message</p>
+}
+
+<table>
+    <thead>
+        <tr>
+            <th>Order ID</th>
+            <th>Order Date</th>
+            <!-- Add other columns as necessary -->
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var order in Model)
+        {
+            <tr>
+                <td>@order.OrderId</td>
+                <td>@order.OrderDate</td>
+                <!-- Add other columns as necessary -->
+            </tr>
+        }
+    </tbody>
+</table>
+
+<!-- Pagination Controls -->
+@if (Model.TotalPages > 1)
+{
+    <div>
+        <a href="@Url.Action("OrdersView", new { pageIndex = 1 })">First</a>
+        <a href="@Url.Action("OrdersView", new { pageIndex = Model.PageIndex - 1 })">Prev</a>
+        <span>Page @Model.PageIndex of @Model.TotalPages</span>
+        <a href="@Url.Action("OrdersView", new { pageIndex = Model.PageIndex + 1 })">Next</a>
+        <a href="@Url.Action("OrdersView", new { pageIndex = Model.TotalPages })">Last</a>
+    </div>
+}
