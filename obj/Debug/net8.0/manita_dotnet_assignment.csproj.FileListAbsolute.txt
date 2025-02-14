@@ -1,0 +1,9 @@
+C:\Users\hp\Downloads\manita_dotnet_assignment_final\obj\Debug\net8.0\manita_dotnet_assignment.csproj.AssemblyReference.cache
+C:\Users\hp\Downloads\manita_dotnet_assignment_final\obj\Debug\net8.0\manita_dotnet_assignment.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\hp\Downloads\manita_dotnet_assignment_final\obj\Debug\net8.0\manita_dotnet_assignment.AssemblyInfoInputs.cache
+C:\Users\hp\Downloads\manita_dotnet_assignment_final\obj\Debug\net8.0\manita_dotnet_assignment.AssemblyInfo.cs
+C:\Users\hp\Downloads\manita_dotnet_assignment_final\obj\Debug\net8.0\manita_dotnet_assignment.csproj.CoreCompileInputs.cache
+C:\Users\hp\Downloads\manita_dotnet_assignment_final\obj\Debug\net8.0\manita_dotnet_assignment.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\hp\Downloads\manita_dotnet_assignment_final\obj\Debug\net8.0\manita_dotnet_assignment.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\hp\Downloads\manita_dotnet_assignment_final\obj\Debug\net8.0\manita_dotnet_assignment.RazorAssemblyInfo.cache
+C:\Users\hp\Downloads\manita_dotnet_assignment_final\obj\Debug\net8.0\manita_dotnet_assignment.RazorAssemblyInfo.cs
